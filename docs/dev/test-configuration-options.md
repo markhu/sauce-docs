@@ -751,6 +751,10 @@ __Description__: allows you to set a custom time zone for your test. If the `tim
 
   See the [Appium Android documentation](http://appium.io/docs/en/writing-running-appium/android/android-shell/#mobile-shell) for additional support.
 
+:::note
+Many sites determine location based on the IP address of the server, in which case changing the system's time zone won't have an affect. If you need a site to parse a different location, you might need to use a proxy.
+:::
+
 __Value Type__: string.
 
 __Examples__:
