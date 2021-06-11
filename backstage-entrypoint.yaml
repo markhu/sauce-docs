@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+    name: sauce-docs
+    description: Customer facing documentation for the Sauce Labs Platform 
+    tags:
+      - docs
+      - tech-content
+    links:
+      - url: https://backstage.io/
+        title: Website
+        icon: web
+spec:
+    type: service
+    lifecycle: production
+    owner: tech-content
+    system: docs
