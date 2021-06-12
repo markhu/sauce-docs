@@ -10,6 +10,8 @@ metadata:
       - url: https://backstage.io/
         title: Website
         icon: web
+    annotations:
+        backstage.io/techdocs-ref: url:https://github.com/saucelabs/sauce-docs/tree/backstage-integration
 spec:
     type: service
     lifecycle: production
