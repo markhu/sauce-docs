@@ -542,14 +542,6 @@ h6, .h6 {
   transform:translate(0, 2px);
 }
 
-.announcementBarimage {
-  background-image: url(/img/saucebot-announcementbar.png);
-  width: 55px;
-  height: 21px;
-  border: 0px;
-  padding: 0;
-}
-
 
 
 /*Playing with ribbons*/
