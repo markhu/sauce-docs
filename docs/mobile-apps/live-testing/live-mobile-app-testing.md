@@ -24,9 +24,6 @@ To upload an app via the Sauce Labs UI:
 
 <img src={useBaseUrl('img/live-testing/live-mobile-app-nav.png')} alt="Upload an application" width="650"/>
 
-:::note
-The Sauce Labs UI currently supports live testing on **real devices only**. To test on virtual devices, use the REST API.
-:::
 
 ### Deleting an App
 Deleting an app in Sauce Labs will delete the whole application (i.e., the group of builds belonging to the same app package). Files associated with app identifiers (i.e., belonging to the same platform and accessible to the same team) are indicated by the + symbol next to version number. Also, the version number shown is the most recently updated file, not necessarily the latest version of the application.
