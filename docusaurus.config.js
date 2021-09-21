@@ -82,6 +82,11 @@ const docusaurusConfig = {
           to: '/dev/cli',
         },
         {
+          label: 'Mockups',
+          position: 'left',
+          to: 'mockups/styles',
+        },
+        {
           label: 'Try it Free',
           position: 'right',
           href: 'https://saucelabs.com/sign-up',

@@ -325,6 +325,25 @@ module.exports = {
             ],
         },
     ],
+    mockups: [
+      'mockups/styles',
+      {
+          type: 'category',
+          label: 'CLI Mockups',
+          collapsed: true,
+          items: [
+              {
+                type: 'category',
+                label: 'saucectl CLI',
+                items: [
+                  'mockups/saucectl/init',
+                  'mockups/saucectl/configure',
+                  'mockups/saucectl/run',
+                ]
+              }
+          ],
+      },
+    ],
     dev: [
         'dev',
         {

@@ -1,0 +1,41 @@
+/* CLI Custom CSS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+#table-cli tr {
+    margin-bottom: 2px;
+    padding: 1px;
+    margin-block-start: 2px;
+    background: transparent;
+}
+
+#table-cli th {
+    margin-bottom: 2px;
+    padding: 1px;
+    margin-block-start: 2px;
+    font-family: "museo-sans-rounded", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #F1F2F2;
+    border-bottom: 1px solid #474c55;
+}
+
+#table-cli p {
+    display: block;
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+    font-size: 12px;
+}
+
+.cli {
+    color: #003A70;
+    font-family: "Source Code Pro";
+    padding-left: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 50%;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #EDEDEF;
+    background-clip: padding-box;
+
+}
