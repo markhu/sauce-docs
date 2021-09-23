@@ -20,68 +20,114 @@ You can run the command with no options to initiate **interactive mode**, where 
 
 In either case, the command generates a `.sauce/config.yml` folder and file in the location from which the command is run. If you have an existing project directory for your framework, it is advised that you run this command from the project root.
 
-## Options
+## Options Summary
 
 <table id="table-cli">
   <thead>
     <tr>
-      <th width="20%">Key</th>
+      <th width="30%">Key</th>
       <th width="10%">Shorthand</th>
-      <th width="10%">Required</th>
-      <th width="10%">Format</th>
-      <th width="15%">Default</th>
       <th>Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-     <td><span className="cli">--accessKey</span></td>
-     <td><span className="cli">-a</span></td>
-     <td></td>
-     <td>string</td>
-     <td></td>
-     <td>The authentication access key associated with the Sauce Labs user account making this request. If you have not set your authentication credentials as environment parameters or generated a <code>credentials.yml</code> file, this value is required.</td>
+     <td><a href="#--accesskey-string"><span className="t-cli">--accessKey</span></a></td>
+     <td><span className="t-cli">-a</span></td>
+     <td>A valid Sauce Labs account access key.</td>
     </tr>
     <tr>
-     <td><span className="cli">--app</span></td>
+     <td><span className="t-cli">--app</span></td>
      <td></td>
-     <td></td>
-     <td>string</td>
-     <td></td>
-     <td><small><span className="sauceDBlue">Espresso/XCUITest Only</span></small><br/>The path to a valid mobile application to test.</td>
+     <td>The path to a valid mobile application to test.</td>
     </tr>
     <tr>
-     <td><span className="cli">--framework</span></td>
-     <td><span className="cli">-f</span></td>
-     <td align="center">&#10003;</td>
-     <td>string</td>
-     <td></td>
+     <td><span className="t-cli">--artifacts.download.when</span></td>
+     <td><span className="t-cli">-f</span></td>
      <td>The framework for which this configuration is intended.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--browserName</span></td>
+     <td><span className="t-cli">-b</span></td>
+     <td>The browser in which web-app tests will run.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--cypress.config</span></td>
+     <td></td>
+     <td>The path to the Cypress configuration file.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--device</span></td>
+     <td></td>
+     <td>The set of desired characteristics to match when finding a device.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--emulator</span></td>
+     <td></td>
+     <td>The set of desired characteristics to match when finding an emulator.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--framework</span></td>
+     <td><span className="t-cli">-f</span></td>
+     <td>The framework for which this configuration is intended.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--frameworkVersion</span></td>
+     <td><span className="t-cli">-v</span></td>
+     <td>The version of the framework that is compatible with the tests to be run.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--help</span></td>
+     <td><span className="t-cli">-h</span></td>
+     <td>Usage information for the <code>init</code> command.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--platformName</span></td>
+     <td><span className="t-cli">-p</span></td>
+     <td>The operation system and verseion on which tests will be run.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--region</span></td>
+     <td><span className="t-cli">-r</span></td>
+     <td>The Sauce Labs data center associated with the testing account.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--testApp</span></td>
+     <td><span className="t-cli">-t</span></td>
+     <td>The path to the mobile testing application.</td>
+    </tr>
+    <tr>
+     <td><span className="t-cli">--username</span></td>
+     <td><span className="t-cli">-u</span></td>
+     <td>A valid Sauce Labs user account.</td>
     </tr>
   </tbody>
 </table>
 
-`saucectl` supports the following configuration flags as inline specifications.
+## Options Details
 
 
-### `--accessKey <string>`
+### <span className="cli">--accessKey &lt;string&gt;</span>
+<div className="cli-desc">
 <p><small>| OPTIONAL | STRING |</small></p>
 
 The authentication access key associated with the Sauce Labs user account making this request. If you have not set your authentication credentials as environment parameters or generated a `credentials.yml` file, this value is required.
 
 **Shorthand:** `-a <string>`
 
----
+</div>
 
-### `--app <string>`
-<p><small>| OPTIONAL | STRING | XCUITEST/ESPRESSO ONLY |</small></p>
+### <span className="cli">--app &lt;string&gt;</span>
+<div className="cli-desc">
+<p><small>| OPTIONAL | STRING | <span className="sauceDBlue">Espresso/XCUITest Only</span> |</small></p>
 
 The path to a valid mobile application to test.
 
----
+</div>
 
-### `--artifacts.download.when <string>`
+### <span className="cli">--artifacts.download.when &lt;string&gt;</span>
 
+<div className="cli-desc">
 <p><small>| OPTIONAL | STRING |</small></p>
 
 Specifies when and under what circumstances to download artifacts. Valid values are:
@@ -91,26 +137,29 @@ Specifies when and under what circumstances to download artifacts. Valid values 
 * `pass`: Download artifacts for passing suites only.
 * `fail`: Download artifacts for failed suites only. (default value)
 
----
+</div>
 
-### `--browserName <string>`
-<p><small>| REQUIRED | STRING | WEB-APP ONLY |</small></p>
+### <span className="cli">--browserName &lt;string&gt;</span>
+<div className="cli-desc">
+<p><small>| REQUIRED | STRING | <span className="sauceDBlue">Web-app Only</span> |</small></p>
 
 The name of the browser in which to run tests.
 
 **Shorthand:** `-b <string>`
 
----
+</div>
 
-### `--cypress.config <string>`
-<p><small>| REQUIRED | STRING | CYPRESS ONLY |</small></p>
+### <span className="cli">--cypress.config &lt;string&gt;</span>
+<div className="cli-desc">
+<p><small>| REQUIRED | STRING | <span className="sauceDBlue">Cypress Only</span> |</small></p>
 
 The file path to the Cypress configuration file (typically `cypress.json`).
 
----
+</div>
 
-### `--device <string>`
-<p><small>| OPTIONAL | STRING | XCUITEST/ESPRESSO ONLY |</small></p>
+### <span className="cli">--device &lt;string&gt;</span>
+<div className="cli-desc">
+<p><small>| OPTIONAL | STRING | <span className="sauceDBlue">Espresso/XCUITest Only</span> |</small></p>
 
 Find a real device for this test by matching a set of one or more device characteristics:
 
@@ -129,10 +178,11 @@ You can specify a combination of device characteristics within this flag:
 --device "name=HTC.*,platformVersion=8.0.0,carrierConnectivity=true"
 ```
 
----
+</div>
 
-### `--emulator <string>`
-<p><small>| OPTIONAL | STRING | ESPRESSO ONLY |</small></p>
+### <span className="cli">--emulator &lt;string&gt;</span>
+<div className="cli-desc">
+<p><small>| OPTIONAL | STRING | E<span className="sauceDBlue">Espresso Only</span> |</small></p>
 
 Specify a virtual device for the test by matching a set of one or more emulator characteristics.
 
@@ -148,34 +198,39 @@ You can specify a combination of emulator characteristics within this flag:
 --emulator "name=Samsung Galaxy S8 FHD GoogleAPI Emulator,platformVersion=7.1"
 ```
 
----
+</div>
 
-### `--framework <string>`
+### <span className="cli">--framework &lt;string&gt;</span>
+<div className="cli-desc">
 <p><small>| REQUIRED | STRING |</small></p>
 
 The framework for which this configuration is intended.
 
 **Shorthand:** `-f <string>`
 
----
+</div>
 
-### `--frameworkVersion <string>`
-<p><small>| REQUIRED | STRING | WEB APPS ONLY |</small></p>
+### <span className="cli">--frameworkVersion &lt;string&gt;</span>
+<div className="cli-desc">
+<p><small>| REQUIRED | STRING | <span className="sauceDBlue">Web-app Only</span> |</small></p>
 
 The version of the framework that is compatible with the tests defined in this configuration.
 
 **Shorthand:** `-v <string>`
 
----
+</div>
 
-### `-h, --help`
+### <span className="cli">-h, --help</span>
+
+<div className="cli-desc">
 
 Usage information for the `init` command.
 
----
+</div>
 
-### `--platformName <string>`
-<p><small>| OPTIONAL | STRING | WEB APPS ONLY |</small></p>
+### <span className="cli">--platformName &lt;string&gt;</span>
+<div className="cli-desc">
+<p><small>| OPTIONAL | STRING | <span className="sauceDBlue">Web-app Only</span> |</small></p>
 
 A specific operating system and version on which to run the specified browser and test suite.
 
@@ -185,38 +240,43 @@ You can optionally specify `docker` here as the platform.
 
 **Shorthand:** `-p <string>`
 
----
+</div>
 
-### `--region <string>`
+### <span className="cli">--region &lt;string&gt;</span>
+<div className="cli-desc">
 <p><small>| REQUIRED | STRING |</small></p>
 
 Specifies the Sauce Labs data center through which tests will run. Valid values are: `us-west-1` (default) or `eu-central-1`.
 
 **Shorthand:** `-r <string>`
 
----
+</div>
 
-### `--testApp <string>`
-<p><small>| REQUIRED | STRING | XCUITEST/ESPRESSO ONLY |</small></p>
+### <span className="cli">--testApp &lt;string&gt;</span>
+<div className="cli-desc">
+<p><small>| REQUIRED | STRING | <span className="sauceDBlue">Espresso/XCUITest Only</span> |</small></p>
 
 The path to the mobile testing application.
 
 **Shorthand:** `-t <string>`
 
----
+</div>
 
-### `--username <string>`
+### <span className="cli">--username &lt;string&gt;</span>
+<div className="cli-desc">
 <p><small>| OPTIONAL | STRING |</small></p>
 
 A valid Sauce Labs user account. If you have not set your authentication credentials as environment parameters or generated a `credentials.yml` file, this value is required.
 
 **Shorthand:** `-u <string>`
 
----
+</div>
 
 ## Examples
 
-```bash title="Interactive Example"
+### Interactive Example
+
+```bash
 $ saucectl init
 12:13:20 INF Start Init Command
 ? Select region: us-west-1
@@ -229,6 +289,8 @@ $ saucectl init
  xcuitest
 ```
 
-```bash title="Batch Example"
+### Batch Example
+
+```bash
 $ saucectl init -r us-west-1 -f cypress -b chrome
 ```

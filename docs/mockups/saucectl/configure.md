@@ -13,3 +13,5 @@ Generate a credentials file with your Sauce Labs Username and Access Key.
 <span className="cli">$ saucectl configure [OPTIONS]</span>
 
 ## Extended Description
+
+## Options Summary
