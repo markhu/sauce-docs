@@ -89,7 +89,7 @@ saucectl run --ccy 2
 ```
 </div>
 
-### <span className="cli">--config &lt;path></span>
+### <span className="cli">--config &lt;path&gt;</span>
 <div className="cli-desc">
 <p><small>| OPTIONAL | FILEPATH |</small></p>
 
@@ -169,7 +169,7 @@ saucectl run --timeout 30m
 ```
 </div>
 
-### <span className="cli">--tunnel-id &lt;string&mt</span>
+### <span className="cli">--tunnel-id &lt;string&gt;</span>
 <div className="cli-desc">
 <p><small>| OPTIONAL | STRING | <span className="sauceDBlue">Sauce Cloud Only</span> |</small></p>
 

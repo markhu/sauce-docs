@@ -1,7 +1,7 @@
 /* CLI Custom CSS */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-#table-cli tr {
+#table-cli tr, td {
     margin-bottom: 1px;
     padding: 0px;
     margin-block-start: 2px;
@@ -36,8 +36,25 @@
 .t-cli {
   color: #003A70;
   font-size: 13px;
-  padding: 2px;
-  border: solid .5px #d6d6db;;
+  padding: 1px;
+  border: solid .5px #d6d6db;
   background-color: #EDEDEF;
   border-radius: 5px;
+}
+
+
+html[data-theme='dark'] .cli {
+  background: linear-gradient(to right, #44494F 0%,#44494F 550px, transparent 50px, transparent 100%);
+  color: #EDEDEF;
+}
+
+html[data-theme='dark'] .t-cli {
+  background: linear-gradient(to right, #44494F 0%,#44494F 550px, transparent 50px, transparent 100%);
+  color: #EDEDEF;
+  border: solid .5px #93939f;
+}
+
+html[data-theme='dark'] #table-cli th {
+  background-color: #44494F;
+  color: #EDEDEF;
 }

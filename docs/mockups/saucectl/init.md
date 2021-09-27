@@ -37,12 +37,12 @@ In either case, the command generates a `.sauce/config.yml` folder and file in t
      <td>A valid Sauce Labs account access key.</td>
     </tr>
     <tr>
-     <td><span className="t-cli">--app</span></td>
+     <td><a href="#--app-string"><span className="t-cli">--app</span></a></td>
      <td></td>
      <td>The path to a valid mobile application to test.</td>
     </tr>
     <tr>
-     <td><span className="t-cli">--artifacts.download.when</span></td>
+     <td><a href="#--artifacts.download.when-string"><span className="t-cli">--artifacts.download.when</span></a></td>
      <td><span className="t-cli">-f</span></td>
      <td>The framework for which this configuration is intended.</td>
     </tr>
