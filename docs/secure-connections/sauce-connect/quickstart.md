@@ -63,7 +63,7 @@ To verify that your tunnel is up and running, there are two places you can check
 
 #### Tunnels Page
 
-<img src={useBaseUrl('img/sauce-connect/sauceconnect-tunnelsuccess-ui.png')} alt="Sauce Connect Tunnel Success UI" />
+<img src={useBaseUrl('img/sauce-connect/sauceconnect-tunnelsuccess.png')} alt="Sauce Connect Tunnel Success CLI" width="700"/>
 
 #### CLI/Terminal
 
