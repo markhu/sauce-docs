@@ -61,10 +61,12 @@ That's it! Now that your tunnel is up, try running a test. To view additional co
 
 To verify that your tunnel is up and running, there are two places you can check:
 
-#### Tunnel Page
-<img src={useBaseUrl('img/sauce-connect/sauceconnect-tunnelsuccess-ui.png')} alt="Sauce Connect Tunnel Success" width="800"/>
+#### Tunnels Page
+
+<img src={useBaseUrl('img/sauce-connect/sauceconnect-tunnelsuccess-ui.png')} alt="Sauce Connect Tunnel Success UI" />
 
 #### CLI/Terminal
+
 <img src={useBaseUrl('img/sauce-connect/sauceconnect-tunnelsuccess-cli.png')} alt="Sauce Connect Tunnel Success CLI" width="700"/>
 
 
